@@ -43,6 +43,14 @@ A high-performance plant disease detection and severity analysis system powered 
 Input (Image/Video) → YOLO26l-seg → Mask Extraction → Severity Scoring → Visualizer → Output (Gradio UI)
 ```
 
+## 🧠 Model Weights
+
+To use the fine-tuned disease detection capabilities, you need to download the trained weights:
+
+1.  **Download:** [Click here to download the `runs` folder from Google Drive]([YOUR_DRIVE_LINK_HERE])
+2.  **Install:** Extract the `runs` folder into the root directory of this project.
+3.  **Verification:** Ensure the path `runs/segment/train-2/weights/best.pt` exists. The application will automatically detect and load these weights on startup.
+
 ## 🚀 Installation & Usage
 
 ### 1. Setup Environment
