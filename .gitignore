@@ -1,0 +1,21 @@
+# Environments
+venv/
+env/
+.env
+__pycache__/
+*.pyc
+*.pyo
+
+# Data & Output
+data/
+results/
+runs/
+*.pt
+*.onnx
+
+# IDEs & OS
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
