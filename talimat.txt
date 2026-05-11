@@ -1,0 +1,40 @@
+Projeyi Sıfırdan Çalıştırma Talimatları (Adım Adım):
+
+Adım 1: Terminali (Komut İstemini) Açın
+Windows Başlat menüsüne tıklayın, arama çubuğuna "cmd" veya "PowerShell" yazıp Enter'a basarak terminali açın.
+
+Adım 2: Proje Klasörüne Gidin
+Aşağıdaki komutu kopyalayıp terminale yapıştırarak (veya yazarak) projenin bulunduğu klasöre geçiş yapın:
+cd c:\Users\iemre\Desktop\Projeler\disease_detector
+
+Adım 3: (İsteğe Bağlı ama Önerilir) Sanal Ortam Oluşturun ve Aktif Edin
+Paketlerin sistemdeki diğer projelerle çakışmaması için sanal ortam oluşturun. Sırasıyla şu iki komutu çalıştırın:
+python -m venv venv
+venv\Scripts\activate
+
+(Not: İkinci komuttan sonra satırın başında "(venv)" yazısını görmelisiniz.)
+
+Adım 4: Gerekli Kütüphaneleri Yükleyin
+Projenin çalışması için ihtiyaç duyduğu tüm kütüphaneleri yüklemek için aşağıdaki komutu çalıştırın (bu işlem biraz sürebilir):
+pip install -r requirements.txt
+
+Adım 5: Uygulamayı Başlatın
+Tüm indirmeler bittikten sonra web arayüzünü başlatmak için şu komutu çalıştırın:
+python app.py
+
+Uygulama çalıştıktan sonra terminalde beliren yerel adrese (genellikle http://127.0.0.1:7860 veya http://localhost:7860) tarayıcınızdan giderek uygulamayı kullanabilirsiniz.
+
+--------------------------------------------------
+Ek Komutlar (Geliştiriciler ve Model Eğitimi İçin):
+
+- Verisetini İndirmek İçin:
+python download_dataset.py
+
+- İndirilen Verisetini YOLO Formatına Çevirmek İçin:
+python convert_dataset.py
+
+- Yeni Bir Model Eğitimi Başlatmak İçin:
+python train.py
+
+- Yarıda Kalan Bir Eğitimi Devam Ettirmek İçin:
+python train_resume.py
