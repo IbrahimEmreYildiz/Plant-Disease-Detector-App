@@ -48,8 +48,8 @@ Input (Image/Video) → YOLO26l-seg → Mask Extraction → Severity Scoring →
 To use the fine-tuned disease detection capabilities, you need to download the trained weights:
 
 1.  **Download:** [Click here to download the `best.pt` model weights from Google Drive](https://drive.google.com/file/d/1uWVzIAQnqvM9a2-DP9Pf9A2JE402J66f/view?usp=drive_link)
-2.  **Install:** Create the directory path `runs/segment/train-2/weights/` if it doesn't exist, and place the downloaded `best.pt` file there.
-3.  **Verification:** Ensure the path `runs/segment/train-2/weights/best.pt` exists. The application will automatically detect and load these weights on startup.
+2.  **Install:** Place the downloaded `best.pt` file directly into the **project root directory** (the same folder as `app.py`). 
+3.  **Verification:** When you run `python app.py`, look for the message `Loading model weights from: best.pt` in the terminal. If you see "Using base pretrained model", the custom weights were not found.
 
 ## 🚀 Installation & Usage
 
