@@ -12,6 +12,7 @@ from src.report_generator import ReportGenerator
 # Model Loading logic — prefer fine-tuned train-2, fallback to train, then base model
 def load_model():
     candidates = [
+        "best.pt",
         os.path.join("runs", "segment", "train-2", "weights", "best.pt"),
         os.path.join("runs", "segment", "train", "weights", "best.pt"),
     ]
